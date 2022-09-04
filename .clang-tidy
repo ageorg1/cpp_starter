@@ -1,0 +1,5 @@
+---
+Checks:          '*,-fuchsia-*,-zircon-*,-altera-*,-android-*,-darwin-*,-hicpp-*,-linuxkernel-*,-google-*,-llvm-*,-llvmlibc-*,-objc-*'
+WarningsAsErrors: '*'
+HeaderFilterRegex: ''
+FormatStyle:     'google'
