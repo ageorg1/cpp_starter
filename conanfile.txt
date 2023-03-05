@@ -1,0 +1,12 @@
+[requires]
+abseil/20230125.1
+boost/1.81.0
+spdlog/1.11.0
+
+[test_requires]
+benchmark/1.7.1
+gtest/cci.20210126
+
+[generators]
+CMakeDeps
+CMakeToolchain

@@ -4,5 +4,5 @@ target_link_libraries(
   PRIVATE project_options
           project_warnings
           sum
-          CONAN_PKG::gtest)
+          GTest::gtest_main)
 add_test(test_sum test_sum)

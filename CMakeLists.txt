@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16...3.23)
+cmake_minimum_required(VERSION 3.15)
 
 project(cpp_starter CXX)
 include(cmake/StandardProjectSettings.cmake)
@@ -26,7 +26,13 @@ enable_doxygen()
 # allow for static analysis options
 include(cmake/StaticAnalyzers.cmake)
 
-include(cmake/Conan.cmake)
-run_conan()
+# Enable CTest
+enable_testing()
+
+find_package(ABSL REQUIRED)
+find_package(BENCHMARK REQUIRED)
+find_package(BOOST REQUIRED)
+find_package(GTEST REQUIRED)
+find_package(SPDLOG REQUIRED)
 
 add_subdirectory(src)
